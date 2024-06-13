@@ -78,7 +78,7 @@ int main()
         cin >> n;
         string w;
         cin >> w;
-        string y;
+        string y = "";
         for (int i = 0; i < n; i++)
         {
             if (i + 3 >= n)
@@ -87,12 +87,17 @@ int main()
             }
             else if (w[i + 3] == 'a' || w[i + 3] == 'e')
             {
-                y = y + w[i] + w[i + 1] + '.';
+                y += w[i];
+                y += w[i + 1];
+                y += '.';
                 i++;
             }
             else
             {
-                y = y + w[i] + w[i + 1] + w[i + 2] + '.';
+                y += w[i];
+                y += w[i + 1];
+                y += w[i + 2];
+                y += '.';
                 i += 2;
             }
         }
