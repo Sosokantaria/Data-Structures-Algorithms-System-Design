@@ -1,6 +1,6 @@
 // divide the array into two halves, sort each half, and then merge the sorted halves back together
 
-// Time complexity: O(N)
+// Time complexity: O(N*logN)
 
 #include <iostream>
 using namespace std;
